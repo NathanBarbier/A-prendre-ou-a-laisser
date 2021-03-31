@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>A prendre ou à laisser</title>
+</head>
+
+<body style="background : url(image/fond.jpg) 0 0 fixed;">
+
+    <div id="titre">
+    <h1>À prendre ou à laisser</h1>
+    </div>
+
+    <div id="divNomJoueur">
+        <p>Saisissez votre Nom</p>
+        <input type="text" placeholder="Votre nom" id="joueur1" maxlength="15" style="box-shadow: 0em 0em 1em  rgb(255, 0, 0) ;">
+        <div id="error1"></div>
+        <div>
+            <button id="but1" type="button" onclick="jouer()">Jouer</button>
+        </div>
+    </div>
+
+
+    <div id="partie2" style="display: none;">
+        <div id="divJeux" >
+
+            <div class="colonne1">    
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">1</p></div>
+                    <div class="divPValeur"><p class="pValeur">bonjour</p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">2</p></div>
+                    <div class="divPValeur"><p class="pValeur">coucou</p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">3</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">4</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">5</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">6</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">7</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">8</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">9</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">10</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite" style="margin-left: 20%;" >
+                    <div class="divNumBoite"><p class="numBoite">11</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+
+            </div>
+
+            <div class="colonne2">
+                <div id="range">
+                    <div id="joueur">
+                        <p id="J1"></p>
+                        <p id="info">Votre boîte</p>
+                        <div id="boiteJoueur" >
+                            <p id="pNumBoiteJoueur"></p>
+                            <p id="valeurBoiteJoueur"></p>
+                        </div>
+                        <div>
+                            <p id="laGagne"></p>
+                        </div>
+                        <div id="reload"  style="display: none;">
+                            <button type="button" onclick="location.reload()">Rejouer</button>
+                        </div>
+                    </div>
+
+                    <div id="banque" >
+                        <p><u>LA BANQUE</u></p>
+                        <p id="pBanque">Sélectionnez deux boîtes</p>
+                        <button id="accepteOffre" onclick="accepteOffre()" style="display: none;">Accepter l'offre</button>
+                        <button id="refuseOffre" onclick="refuseOffre()" style="display: none;">Refuser l'offre</button>
+                        <button id="echangeBoite" onclick="echangeBoite()" style="display: none;">Oui</button>
+                        <button id="continuer" onclick="continuer()" style="display: none;">Non</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colonne3">
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">12</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">13</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">14</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">15</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">16</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">17</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">18</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">19</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">20</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite">
+                    <div class="divNumBoite"><p class="numBoite">21</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+                
+                <div class="boite" style="margin-left: 20%;">
+                    <div class="divNumBoite"><p class="numBoite">22</p></div>
+                    <div class="divPValeur"><p class="pValeur"></p></div>
+                    <p class="pValeurMoyenne"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

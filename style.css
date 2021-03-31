@@ -1,0 +1,260 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#titre {
+    text-align: center;
+    font-size: 2pc;
+    border: solid black 2px;
+    border-radius: 20px;
+    color: goldenrod;
+    text-shadow: 0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black;
+    height: 80px;
+    line-height: 0px;
+    width: max-content;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(128, 128, 128, 0.557);
+}
+
+#divNomJoueur {
+    font-size: 4pc;
+    color: white;
+    text-shadow: 0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+#but1:focus {
+    outline: none;
+}
+
+#but1 {
+    background: url(image/bouton.jpg);
+    margin: auto;
+    width: 223px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    font-size: 2pc;
+    margin-top: 10px;
+    border-radius: 50px;
+    text-shadow: 1px 1px 1px rgb(103, 103, 103), 0 2px 0.2em grey, 0 0 0.2em rgb(95, 95, 95);
+
+}
+
+#joueur1:focus {
+    outline: none;
+}
+
+#joueur1 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 75px;
+    width: 550px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-color: rgb(144, 23, 23);
+}
+
+#laGagne,
+#reload {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#joueur {
+    margin-top: 0;
+    width: 100%;
+    float: left;
+}
+
+#banque {
+    font-size: 2pc;
+    color: gold;
+    text-shadow: 0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black;
+    width: 100%;
+    height: 200px;
+    float: left;
+    text-align: center;
+}
+
+.boite:active {
+    transform: scale(0.95);
+}
+
+.boite:hover {
+    cursor: pointer;
+    box-shadow: 0 0 4px black,0 0 4px black ;
+}
+
+.boite {
+    border: black 2px solid;
+    border-radius: 50px;
+    width: 140px;
+    height: 60px;
+    margin-top: 10px;
+    float: left;
+    transform: scale(1);
+    background-color: rgba(211, 211, 211, 0.60);
+    margin: 10px;
+    margin-right: 20px;
+    text-align:center;
+    line-height: 5px;
+}
+
+.pValeur {
+    color: white;
+    text-shadow: 0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black;
+    font-size: large;
+    margin: auto;
+    height: 20px;
+    text-align: center;
+    display: none;
+    border-radius: 20px;
+}
+
+#valeurBoiteJoueur {
+    color: white;
+    text-shadow: 0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black,0 0 2px black;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: white; */
+    /* border: solid 1px black; */
+    height: 20px;
+    width: 100px;
+    display: none;
+    text-align: center;
+    font-size: large;
+
+}
+
+#boiteJoueur {
+    border-radius: 70px;
+    width: 140px;
+    height: 60px;
+    border: black solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:gold;
+    text-align: center;
+    line-height: 3px;
+}
+
+#pNumBoiteJoueur {
+    font-weight: bold;
+    font-size: large;
+}
+
+.numBoite {
+    font-weight: bold;
+    font-size: large;
+}
+
+.divNumBoite {
+    line-height: 5px;
+}
+
+.divPValeur {
+}
+
+.pValeurMoyenne {
+    display: none;
+}
+
+.colonne1 {
+    float: left;
+    width: 500px;
+    margin-left: 5%;
+}
+
+.colonne2 {
+    float: left;
+    width: 600px;
+}
+
+.colonne3 {
+    float: left;
+    width: 500px;
+    margin-left: 5%;
+}
+
+#divJeux {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+}
+
+#J1 {
+    text-align: center;
+    font-size: 2pc;
+    color: white;
+    text-shadow: 0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black;
+}
+
+#error1 {
+    margin-top: 10px ;
+    color: rgb(57, 4, 4);
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(49, 0, 0), 0 0 1em darkred, 0 0 0.2em rgb(255, 0, 0);
+}
+
+button:focus {
+    outline: none;
+}
+
+button {
+    font-size: 1pc;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom right, gold, gold);
+    font-weight: bold;
+}
+
+#info {
+    text-align: center;
+    font-size: 2pc;
+    color: white;
+    text-shadow: 0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black;
+}
+
+#range {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#laGagne {
+    font-size: 2pc;
+    color: gold;
+    text-shadow: 0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black;
+}
